@@ -2,7 +2,7 @@
 
 Ce dépôt contient un site web statique réalisé dans le cadre du cours INF16107 - Introduction à l'Internet à l'UQAR (campus de Lévis). Le travail consiste à concevoir un portfolio personnel en équipe de deux, présentant nos compétences, projets et informations de contact.
 
-Le site est composé de quatre pages HTML reliées entre elles par une barre de navigation commune. Chaque page possède sa propre feuille de style CSS. La mise en page repose uniquement sur le système de grille de Bootstrap 5, sans utilisation d'autres composants du framework, ce qui était une contrainte imposée par l'énoncé.
+Le site est composé de quatre pages HTML reliées entre elles par une barre de navigation commune. Chaque page possède sa propre feuille de style CSS. La mise en page repose uniquement sur le système de grille de Bootstrap 5, sans utilisation d'autres composants du framework, ce qui était une contrainte imposée par le professeur.
 
 ### Pages
 
