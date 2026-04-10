@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap 5 - système de grille seulement -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="css/contact.css" rel="stylesheet" type="text/css">
+        <!-- Font Awesome pour les icônes -->
+        <script src="https://kit.fontawesome.com/f69eb5e20e.js" crossorigin="anonymous"></script>
+        <title>Contact - Portfolio</title>
+    </head>
+    <body>
+
+        <!-- ===== Barre de navigation ===== -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="nav-logo">
+                    <img src="img/logo.jpg" alt="Logo portfolio">
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="home.html"><i class="fa-solid fa-house"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html"><i class="fa-solid fa-diagram-project"></i> Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="skills.html"><i class="fa-solid fa-star"></i> Compétences</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contact.html"><i class="fa-solid fa-address-card"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- ===== Contenu principal ===== -->
+        <main class="container-fluid main-content">
+
+            <h1 class="section-titre"><i class="fa-solid fa-address-card"></i> Nous contacter</h1>
+
+            <!-- Adresse et carte -->
+            <div class="row info-row">
+                <div class="col-12 col-md-5 adresse-bloc">
+                    <h2>Nos coordonnées</h2>
+                    <p>
+                        <i class="fa-solid fa-location-dot fa-xl"></i>
+                        <span class="info-label">Adresse</span>
+                    </p>
+                    <p class="info-valeur">1595 Bd Alphonse-Desjardins, Lévis, QC G6V 0A6</p>
+
+                    <p>
+                        <i class="fa-solid fa-phone fa-xl"></i>
+                        <span class="info-label">Téléphone</span>
+                    </p>
+                    <p class="info-valeur">+1 800 463-4712</p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope fa-xl"></i>
+                        <span class="info-label">Courriel</span>
+                    </p>
+                    <p class="info-valeur">info@uqar.ca</p>
+                </div>
+                <div class="col-12 col-md-7 carte-bloc">
+                    <!-- Carte Google Maps via iframe (exigence du TP) -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.581398019736!2d-71.16395352388295!3d46.7928522438161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb895038c164e8b%3A0x505be17730e4718b!2sUniversit%C3%A9%20du%20Qu%C3%A9bec%20%C3%A0%20Rimouski%20-%20Campus%20de%20L%C3%A9vis!5e0!3m2!1sfr!2sca!4v1698360966884!5m2!1sfr!2sca"
+                        width="100%"
+                        height="300"
+                        style="border: 2px solid #ccc;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Campus UQAR Lévis sur Google Maps">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Formulaire de contact -->
+            <div class="row form-row">
+                <div class="col-12 col-md-8 col-lg-6 formulaire-bloc">
+                    <h2>Envoyer un message</h2>
+                    <form action="#" method="post" novalidate>
+
+                        <!-- Nom -->
+                        <div class="champ-groupe">
+                            <label for="nom">Nom :</label>
+                            <input
+                                type="text"
+                                id="nom"
+                                name="nom"
+                                placeholder="Votre nom de famille"
+                                required
+                                minlength="2"
+                                maxlength="50">
+                        </div>
+
+                        <!-- Prénom -->
+                        <div class="champ-groupe">
+                            <label for="prenom">Prénom :</label>
+                            <input
+                                type="text"
+                                id="prenom"
+                                name="prenom"
+                                placeholder="Votre prénom"
+                                required
+                                minlength="2"
+                                maxlength="50">
+                        </div>
+
+                        <!-- Genre -->
+                        <div class="champ-groupe">
+                            <label>Genre :</label>
+                            <div class="radio-groupe">
+                                <input type="radio" id="homme" name="genre" value="homme" required>
+                                <label for="homme">Homme</label>
+                                <input type="radio" id="femme" name="genre" value="femme">
+                                <label for="femme">Femme</label>
+                                <input type="radio" id="autre" name="genre" value="autre">
+                                <label for="autre">Autre</label>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="champ-groupe">
+                            <label for="email">Courriel :</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="exemple@domaine.com"
+                                required>
+                        </div>
+
+                        <!-- Fonction -->
+                        <div class="champ-groupe">
+                            <label for="fonction">Fonction :</label>
+                            <select id="fonction" name="fonction" required>
+                                <option value="">-- Choisir une fonction --</option>
+                                <option value="etudiant">Étudiant</option>
+                                <option value="travailleur">Travailleur</option>
+                                <option value="professeur">Professeur</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="champ-groupe">
+                            <label for="message">Message :</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Écrivez votre message ici..."
+                                required
+                                minlength="10"></textarea>
+                        </div>
+
+                        <!-- Bouton envoi -->
+                        <div class="bouton-envoi">
+                            <button type="submit">
+                                <i class="fa-solid fa-paper-plane"></i> Envoyer
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- ===== Pied de page ===== -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Newsletter -->
+                    <div class="col-12 col-md-6 footer-newsletter">
+                        <h4><i class="fa-solid fa-envelope-open-text"></i> Infolettre</h4>
+                        <form class="newsletter-form" onsubmit="return false;">
+                            <input type="email" placeholder="Entrez votre courriel" required>
+                            <button type="submit">S'abonner</button>
+                        </form>
+                    </div>
+                    <!-- Réseaux sociaux -->
+                    <div class="col-12 col-md-6 footer-social">
+                        <h4><i class="fa-solid fa-share-nodes"></i> Réseaux sociaux</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/accueil.uqar/?locale=fr_CA" target="_blank" title="Facebook UQAR">
+                                <i class="fa-brands fa-facebook fa-2xl"></i>
+                            </a>
+                            <a href="https://twitter.com/UQAR" target="_blank" title="Twitter UQAR">
+                                <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@UQARweb" target="_blank" title="YouTube UQAR">
+                                <i class="fa-brands fa-youtube fa-2xl"></i>
+                            </a>
+                            <a href="https://ca.linkedin.com/school/uqar/" target="_blank" title="LinkedIn UQAR">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 footer-copy">
+                        <p>&copy; 2023 Simon Kasongo &amp; Parfait Nansi - INF16107 UQAR</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

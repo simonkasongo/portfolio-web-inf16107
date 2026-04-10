@@ -1,0 +1,209 @@
+/* ===============================================
+   projects.css - Page des projets
+   Portfolio Simon Kasongo & Parfait Nansi
+   INF16107 - UQAR Lévis, Automne 2023
+   =============================================== */
+
+/* ---- Corps de la page ---- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* ---- Barre de navigation ---- */
+.navbar {
+    background-color: #2c2c2c;
+    padding: 0;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+}
+
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu .nav-item a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 18px 20px;
+    font-size: 15px;
+}
+
+.nav-menu .nav-item a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-menu .nav-item.active a {
+    background-color: #1a65c8;
+    color: #ffffff;
+}
+
+/* ---- Contenu principal ---- */
+.main-content {
+    padding: 20px 30px;
+    background-color: #ffffff;
+    min-height: calc(100vh - 60px - 160px);
+}
+
+.section-titre {
+    padding: 15px 0;
+    color: #2c2c2c;
+    border-bottom: 2px solid #eeeeee;
+    margin-bottom: 25px;
+}
+
+/* ---- Grille des projets ---- */
+.projets-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.projet-card {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.projet-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.projet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.projet-info h2 {
+    font-size: 18px;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+
+.projet-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+/* Lien vers le projet (exigence du TP) */
+.projet-lien {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #1a65c8;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.projet-lien:hover {
+    background-color: #1450a0;
+    color: #ffffff;
+}
+
+/* ---- Pied de page ---- */
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0 10px 0;
+}
+
+.footer-newsletter,
+.footer-social {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.footer-newsletter h4,
+.footer-social h4 {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 220px;
+}
+
+.newsletter-form button {
+    padding: 7px 18px;
+    background-color: #1a65c8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.newsletter-form button:hover {
+    background-color: #1450a0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #aaaaaa;
+}
+
+.footer-copy {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #555555;
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-top: 10px;
+}
